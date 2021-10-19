@@ -1,0 +1,222 @@
+.container {
+    max-width: 1300px;
+    border: 1px solid #222;
+    margin: 0px auto;
+}
+
+header {
+    background-color: white;
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 90px;
+
+        &__logo {
+            width: 122px;
+        }
+
+        &__blockmenucontacts {
+            display: flex;
+        }
+
+        &__menu {
+            flex-wrap: wrap;
+        }
+
+        &__rowlinks {
+            display: inline-flex;
+
+            li {
+                list-style-type: none;
+            }
+        }
+
+        &__link {
+            a {
+                text-decoration: none;
+                padding: 0px 20px 0px 20px;
+
+                font-family: Manrope;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+
+                color: #1e1b1b;
+            }
+        }
+
+        &__line {
+            opacity: 0.36;
+            /* Grey */
+
+            width: 42px;
+            border: 1px solid #939191;
+            transform: rotate(90deg);
+            margin: 0px 16px 0px 16px;
+        }
+        &__contacts {
+            display: flex;
+            align-items: center;
+            margin: 0px;
+        }
+
+        &__phoneicon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__contactsinfo {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px 0px 14px;
+        }
+
+        &__phonetitle {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #1e1b1b;
+
+            opacity: 0.7;
+        }
+
+        &__phonenumber {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 175%;
+
+            color: #1e1b1b;
+        }
+    }
+}
+
+.maininfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    //НЕЛЬЗЯ ТАК MARGIN!
+    margin: 60px auto;
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 7px;
+    }
+
+    &__title {
+        font-family: Manrope;
+        font-style: bold;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 84px;
+
+        letter-spacing: -0.03em;
+        color: #1e1b1b;
+    }
+
+    &__button a {
+        display: flex;
+        //flex-direction: row;
+        align-items: flex-start;
+
+        margin: 32px 0px 48px 0px;
+        padding: 16px 40px;
+
+        background: #ff6433;
+        border-radius: 12px;
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 175%;
+        text-decoration: none;
+        color: white;
+    }
+
+    &__opening-hours {
+    }
+
+    &__picture {
+        padding: 0px 7px;
+    }
+}
+.opening-hours {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__icon {
+        margin: 0px 13px 0px 0px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        max-width: 586px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #939191;
+    }
+
+    &__hours {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 175%;
+
+        color: #1e1b1b;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        .header {
+            flex-direction: column;
+
+            height: auto;
+            &__line {
+                display: none;
+                visibility: hidden;
+            }
+
+            &__blockmenucontacts {
+                //background-color: yellow;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .maininfo {
+        //display: flex;
+        flex-direction: column;
+
+        &__information {
+            align-items: center;
+        }
+
+        &__picture {
+            height: auto;
+        }
+    }
+}
