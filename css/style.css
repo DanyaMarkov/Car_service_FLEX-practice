@@ -1,6 +1,13 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .container {
   max-width: 1300px;
-  border: 1px solid #222;
+  border: 0px solid #222;
   margin: 0px auto;
 }
 
@@ -38,6 +45,12 @@ header .header__blockmenucontacts {
 header .header__menu {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header__rowlinks {
@@ -173,6 +186,10 @@ header .header__phonenumber {
   color: white;
 }
 
+.maininfo__opening-hours {
+  min-width: none;
+}
+
 .maininfo__picture {
   padding: 0px 7px;
 }
@@ -223,6 +240,184 @@ header .header__phonenumber {
   color: #1e1b1b;
 }
 
+.getquote {
+  background-color: #e2e6e9;
+}
+
+.getquote__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.getquote__infoblock {
+  padding: 128px auto;
+  margin: 128px auto;
+  max-width: 584px;
+}
+
+.getquote__title h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+}
+
+.getquote__infodescription {
+  margin: 48px 0px 0px 0px;
+}
+
+.getquote__link {
+  min-width: none;
+}
+
+.getquote__formblock {
+  min-width: none;
+}
+
+.infodescription__info-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 385px;
+}
+
+.infodescription__icon {
+  min-width: none;
+}
+
+.infodescription__textblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 0px 32px 16px;
+}
+
+.infodescription__title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+}
+
+.infodescription__text {
+  margin: 8px auto;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1e1b1b;
+  opacity: 0.6;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.link__text {
+  margin: 0px 0px 0px 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: #1e1b1b;
+}
+
+.link__arrow {
+  margin: 0px 0px 0px 21px;
+}
+
+.formblock {
+  max-width: 625px;
+}
+
+.formblock p {
+  margin: 0px 0px 4px 0px;
+}
+
+.formblock__title h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+  margin: 0px 0px 32px 0px;
+}
+
+.formblock__inputelement {
+  background: #ffffff;
+  border-radius: 0px;
+  border: 0px;
+  width: 80%;
+  /*растягиваем тексовое поле на всю ширину родителя*/
+  border: none;
+  min-width: 0;
+  height: 72px;
+  padding: 0px 0px 0px 40px;
+}
+
+.formblock__form input {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1e1b1b;
+}
+
+.formblock__button input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 32px 0px 48px 0px;
+  padding: 16px 40px;
+  border: 0px solid #1e1b1b;
+  background: #ff6433;
+  border-radius: 12px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: white;
+}
+
 @media (max-width: 992px) {
   header .header {
     -webkit-box-orient: vertical;
@@ -230,6 +425,18 @@ header .header__phonenumber {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+  }
+  header .header__logo {
+    width: auto;
+  }
+  header .header__link a {
+    font-size: 24px;
+  }
+  header .header__phonetitle {
+    font-size: 22px;
+  }
+  header .header__phonenumber {
+    font-size: 20px;
   }
   header .header__line {
     display: none;
@@ -248,6 +455,7 @@ header .header__phonenumber {
             align-items: center;
   }
   .maininfo {
+    margin: 10px auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -259,7 +467,24 @@ header .header__phonenumber {
             align-items: center;
   }
   .maininfo__picture {
-    height: auto;
+    display: none;
+    height: 30%;
+  }
+  .getquote {
+    background-color: #e2e6e9;
+  }
+  .getquote__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

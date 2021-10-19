@@ -1,6 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 .container {
     max-width: 1300px;
-    border: 1px solid #222;
+    border: 0px solid #222;
     margin: 0px auto;
 }
 
@@ -24,6 +30,8 @@ header {
 
         &__menu {
             flex-wrap: wrap;
+            display: flex;
+            align-items: center;
         }
 
         &__rowlinks {
@@ -146,12 +154,14 @@ header {
     }
 
     &__opening-hours {
+        min-width: none;
     }
 
     &__picture {
         padding: 0px 7px;
     }
 }
+
 .opening-hours {
     display: flex;
     flex-direction: row;
@@ -187,12 +197,203 @@ header {
     }
 }
 
+.getquote {
+    background-color: #e2e6e9;
+    &__body {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-around;
+        //margin: 128px auto;
+        //padding: 128px auto;
+    }
+
+    &__infoblock {
+        padding: 128px auto;
+        margin: 128px auto;
+        max-width: 584px;
+    }
+
+    &__title h1 {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 76px;
+
+        letter-spacing: -0.03em;
+
+        color: #1e1b1b;
+    }
+
+    &__infodescription {
+        margin: 48px 0px 0px 0px;
+    }
+
+    &__link {
+        min-width: none;
+        //display: flex;
+        //margin: 32px 0px 0px 0px;
+    }
+
+    &__formblock {
+        min-width: none;
+    }
+}
+
+.infodescription {
+    &__info-element {
+        display: flex;
+        flex-direction: row;
+        max-width: 385px;
+    }
+
+    &__icon {
+        min-width: none;
+    }
+
+    &__textblock {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 32px 16px;
+        //align-items: center;
+    }
+
+    &__title {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+
+        color: #1e1b1b;
+    }
+
+    &__text {
+        margin: 8px auto;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1e1b1b;
+
+        opacity: 0.6;
+    }
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-decoration: none;
+
+    &__text {
+        margin: 0px 0px 0px 60px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 175%;
+
+        color: #1e1b1b;
+    }
+
+    &__arrow {
+        margin: 0px 0px 0px 21px;
+    }
+}
+
+.formblock {
+    max-width: 625px;
+
+    p {
+        margin: 0px 0px 4px 0px;
+    }
+    &__title h1 {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+
+        letter-spacing: -0.03em;
+
+        color: #1e1b1b;
+
+        margin: 0px 0px 32px 0px;
+    }
+
+    &__inputelement {
+        background: #ffffff;
+        border-radius: 0px;
+        border: 0px;
+
+        width: 80%; /*растягиваем тексовое поле на всю ширину родителя*/
+        border: none;
+        min-width: 0;
+        height: 72px;
+        padding: 0px 0px 0px 40px;
+    }
+
+    &__form {
+        input {
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+
+            color: #1e1b1b;
+        }
+    }
+
+    &__button input {
+        display: flex;
+        //flex-direction: row;
+        align-items: flex-start;
+
+        margin: 32px 0px 48px 0px;
+        padding: 16px 40px;
+        border: 0px solid #1e1b1b;
+        background: #ff6433;
+        border-radius: 12px;
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 175%;
+        //text-decoration: none;
+        color: white;
+    }
+}
+
 @media (max-width: 992px) {
     header {
         .header {
             flex-direction: column;
-
             height: auto;
+
+            &__logo {
+                width: auto;
+            }
+
+            &__link {
+                a {
+                    font-size: 24px;
+                }
+            }
+
+            &__phonetitle {
+                font-size: 22px;
+            }
+
+            &__phonenumber {
+                font-size: 20px;
+            }
+
             &__line {
                 display: none;
                 visibility: hidden;
@@ -209,6 +410,7 @@ header {
 
     .maininfo {
         //display: flex;
+        margin: 10px auto;
         flex-direction: column;
 
         &__information {
@@ -216,7 +418,22 @@ header {
         }
 
         &__picture {
-            height: auto;
+            //width: 100%;
+            //height: auto;
+            display: none;
+            //position: relative;
+            height: 30%;
+            //transform: translateY(-50%);
+        }
+    }
+
+    .getquote {
+        background-color: #e2e6e9;
+        &__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 25px;
         }
     }
 }
