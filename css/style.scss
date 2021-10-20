@@ -242,6 +242,7 @@ header {
 }
 
 .infodescription {
+    //display: flex;
     &__info-element {
         display: flex;
         flex-direction: row;
@@ -435,5 +436,10 @@ header {
             align-items: center;
             margin: 25px;
         }
+    }
+
+    .infodescription {
+        display: flex;
+        align-items: center;
     }
 }
