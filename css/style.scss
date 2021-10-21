@@ -824,6 +824,150 @@ header {
     }
 }
 
+// --------------КАРУСЕЛЬ----------------
+
+.reviews {
+    background: #f2f2f2;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 909px;
+        margin: 128px auto 94px auto;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+        /* or 67px */
+
+        text-align: center;
+        letter-spacing: -0.03em;
+
+        /* Black */
+
+        color: #1e1b1b;
+    }
+
+    &__carousel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__strips {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__strip {
+        min-width: 32px;
+        max-height: 3px;
+        background-image: url(../img/rewiews/strip.svg);
+        margin: 47px 15px;
+        &_active {
+            min-width: 32px;
+            margin: 47px 15px;
+            max-height: 3px;
+            background-image: url(../img/rewiews/active-strip.svg);
+        }
+    }
+
+    &__buttons {
+        margin: 16px auto;
+
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    &__button-left {
+        background-color: yellow;
+    }
+
+    &__button-right {
+        background-color: yellow;
+    }
+}
+
+.carousel {
+    &__infoblock {
+        padding: 72px 72px;
+        max-width: 516px;
+        margin: 0px 24px;
+        border: 2px solid black;
+        background-color: white;
+        display: flex;
+        //align-items: center;
+        //justify-content: center;
+        flex-direction: column;
+
+        // max-width: 616px;
+
+        //flex-direction: row;
+    }
+}
+.infoblock {
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    &__picture {
+        min-width: 64px;
+    }
+
+    &__name-and-city {
+        margin: 0px 0px 0px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: -0.03em;
+        color: #1e1b1b;
+    }
+
+    &__city {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+
+        color: #939191;
+    }
+
+    &__message {
+        margin: 24px 0px 0px 0px;
+        max-width: 472px;
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        /* or 150% */
+
+        letter-spacing: -0.03em;
+        color: #1e1b1b;
+    }
+}
+
 // Медио запросы ниже ===========================================!!!!!!!!!!!============================!!!!!!!!===============================================
 
 @media (max-width: 992px) {
