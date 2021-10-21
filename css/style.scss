@@ -646,9 +646,10 @@ header {
 }
 
 .contactus {
-    //background: #f2f2f2;
+    background: #f2f2f2;
     &__body {
-        display: flex;
+        display: flexbox;
+
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -662,25 +663,44 @@ header {
         // display: flex;
         // align-items: flex-start;
         // flex-direction: column;
-        background: url(img/background1.png) no-repeat center top / cover;
-
-        background: url(img/background1.png) repeat-y #ff6433;
+        //background: url(img/background1.png) no-repeat center top / cover;
+        background-image: url(img/background1.png);
+        //background: url(img/background1.png) repeat-y #ff6433;
     }
 
     &__rowinfo {
+        margin: 48px 0px 0px 0px;
         background: #f2f2f2;
     }
 }
 
 .banner {
+    min-height: 502px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    //background-image: url(../img/background1.png);
+
+    background: url(../img/background1.png) left bottom no-repeat, url(../img/background2.png) right top no-repeat;
+
     &__body {
-        background: cornflowerblue;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #ff6433;
+        margin-left: 20%;
+        //margin: 0px 0px 0px 318px;
+        max-width: 569px;
+        min-width: 250px;
+        //background: cornflowerblue;
 
         // margin-left: auto;
         // margin-right: auto;
     }
 
     &__title {
+        //max-width: 569px;
         font-family: Manrope;
         font-style: normal;
         font-weight: bold;
@@ -691,24 +711,35 @@ header {
         color: #ffffff;
     }
 
-    &__button {
-        left: 20.73%;
-        right: 70.05%;
-        top: 51.11%;
-        bottom: 48.07%;
+    &__button a {
+        display: flex;
+        //flex-direction: row;
+        align-items: flex-start;
 
-        /* Black */
-
+        margin: 32px 0px 48px 0px;
+        padding: 16px 40px;
+        border: 0px solid #1e1b1b;
         background: #1e1b1b;
         border-radius: 12px;
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 175%;
+        //text-decoration: none;
+        color: white;
     }
 }
 .rowinfo {
+    max-width: 1300px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0px auto;
     &__el {
-        margin: auto 92px;
+        margin: 48px 0px;
     }
 
     &__title {
@@ -717,7 +748,6 @@ header {
         font-weight: 800;
         font-size: 58px;
         line-height: 76px;
-        /* identical to box height, or 131% */
 
         text-align: center;
         letter-spacing: -0.03em;
@@ -739,6 +769,58 @@ header {
         color: #1e1b1b;
 
         opacity: 0.7;
+    }
+}
+
+.brends {
+    background: #fafafa;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        margin: 128px auto 0px auto;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+
+        text-align: center;
+        letter-spacing: -0.03em;
+
+        color: #1e1b1b;
+    }
+
+    &__block-with-logotypes {
+        // margin: 40px 0px 0px 0px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // align-items: flex-start;
+
+        margin: 0px auto 15px auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    &__logotype {
+        max-width: 225px;
+        min-height: 140px;
+        min-width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-basis: 13%;
+
+        margin: 38px 38px;
     }
 }
 

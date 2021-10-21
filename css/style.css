@@ -722,10 +722,12 @@ header .header__phonenumber {
   color: #1e1b1b;
 }
 
+.contactus {
+  background: #f2f2f2;
+}
+
 .contactus__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -740,16 +742,44 @@ header .header__phonenumber {
 }
 
 .contactus__banner {
-  background: url(img/background1.png) no-repeat center top/cover;
-  background: url(img/background1.png) repeat-y #ff6433;
+  background-image: url(img/background1.png);
 }
 
 .contactus__rowinfo {
+  margin: 48px 0px 0px 0px;
   background: #f2f2f2;
 }
 
+.banner {
+  min-height: 502px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/background1.png) left bottom no-repeat, url(../img/background2.png) right top no-repeat;
+}
+
 .banner__body {
-  background: cornflowerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ff6433;
+  margin-left: 20%;
+  max-width: 569px;
+  min-width: 250px;
 }
 
 .banner__title {
@@ -762,30 +792,46 @@ header .header__phonenumber {
   color: #ffffff;
 }
 
-.banner__button {
-  left: 20.73%;
-  right: 70.05%;
-  top: 51.11%;
-  bottom: 48.07%;
-  /* Black */
-  background: #1e1b1b;
-  border-radius: 12px;
-}
-
-.rowinfo {
+.banner__button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 32px 0px 48px 0px;
+  padding: 16px 40px;
+  border: 0px solid #1e1b1b;
+  background: #1e1b1b;
+  border-radius: 12px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: white;
+}
+
+.rowinfo {
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0px auto;
 }
 
 .rowinfo__el {
-  margin: auto 92px;
+  margin: 48px 0px;
 }
 
 .rowinfo__title {
@@ -794,7 +840,6 @@ header .header__phonenumber {
   font-weight: 800;
   font-size: 58px;
   line-height: 76px;
-  /* identical to box height, or 131% */
   text-align: center;
   letter-spacing: -0.03em;
   color: #661ce7;
@@ -811,6 +856,79 @@ header .header__phonenumber {
   /* Black */
   color: #1e1b1b;
   opacity: 0.7;
+}
+
+.brends {
+  background: #fafafa;
+}
+
+.brends__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brends__title {
+  margin: 128px auto 0px auto;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+}
+
+.brends__block-with-logotypes {
+  margin: 0px auto 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brends__logotype {
+  max-width: 225px;
+  min-height: 140px;
+  min-width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
+  margin: 38px 38px;
 }
 
 @media (max-width: 992px) {
