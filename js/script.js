@@ -73,3 +73,104 @@ left.addEventListener('click', function () {
     }
 
 });
+
+var strip1 = document.getElementById("strip1");
+strip1.addEventListener('click', function () {
+    //alert("11");
+    reviews_page = 2;
+    getColorToStrip(reviews_page);
+
+});
+var strip2 = document.getElementById("strip2");
+strip2.addEventListener('click', function () {
+    //alert("11");
+    reviews_page = 2;
+    getColorToStrip(reviews_page);
+
+});
+var strip3 = document.getElementById("strip3");
+strip3.addEventListener('click', function () {
+    //alert("11");
+    reviews_page = 3;
+    getColorToStrip(reviews_page);
+
+});
+var strip4 = document.getElementById("strip4");
+strip4.addEventListener('click', function () {
+    //alert("11");
+    reviews_page = 4;
+    getColorToStrip(reviews_page);
+
+});
+
+// questblock__icon
+// questblock__answer
+
+var accItem = document.getElementsByClassName('questblock');
+var accHD = document.getElementsByClassName('questblock__visible');
+
+
+for (i = 0; i < accHD.length; i++) {
+    accHD[i].addEventListener('click', toggleItem, false);
+}
+function toggleItem() {
+    var itemClass = this.parentNode.className;
+
+    for (i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'questions__questblock questblock close';
+    }
+    if (itemClass == 'questions__questblock questblock close') {
+        this.parentNode.className = 'questions__questblock questblock open';
+    }
+
+    console.log("ha");
+    console.log(accHD);
+}
+
+
+// РЕШЕНИЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// var accItem = document.getElementsByClassName('questblock__answer');
+// var accHD = document.getElementsByClassName('knopa');
+// for (i = 0; i < accHD.length; i++) {
+//     accHD[i].addEventListener('click', toggleItem, false);
+// }
+// function toggleItem() {
+//     var itemClass = this.parentNode.className;
+//     for (i = 0; i < accItem.length; i++) {
+//         accItem[i].className = 'questblock__answer close';
+//     }
+//     if (itemClass == 'questblock__answer close') {
+//         //alert("Вывози!");
+//         this.parentNode.className = 'questblock__answer open';
+//         //this.parentNode.className = 'container'
+//     }
+
+//     console.log("ha");
+//     console.log(accHD);
+// }
+
+
+// var quest = document.querySelector('.questblock__icon');
+// quest.addEventListener('click', function () {
+
+//     if (document.querySelector('.questblock__icon').innerHTML == '<img src="img/Quest-.svg" alt="">') {
+//         document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest+.svg" alt="">';
+
+
+//         document.getElementById("MyElement").classList.add('MyClass');
+
+
+//     } else {
+//         document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest-.svg" alt="">';
+//     }
+// });
+
+// var quest = document.querySelector('.questblock__icon(2)');
+// quest.addEventListener('click', function () {
+
+//     if (document.querySelector('.questblock__icon(2)').innerHTML == '<img src="img/Quest-.svg" alt="">') {
+//         document.querySelector('.questblock__icon(2)').innerHTML = '<img src="img/Quest+.svg" alt="">';
+//     } else {
+//         document.querySelector('.questblock__icon(2)').innerHTML = '<img src="img/Quest-.svg" alt="">';
+//     }
+// });

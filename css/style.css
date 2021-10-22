@@ -952,7 +952,7 @@ header .header__phonenumber {
 }
 
 .reviews__title {
-  max-width: 909px;
+  max-width: 70%;
   margin: 128px auto 94px auto;
   font-family: Manrope;
   font-style: normal;
@@ -976,6 +976,24 @@ header .header__phonenumber {
           flex-direction: row;
 }
 
+.reviews__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #970c97;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__empty {
+  min-width: 128px;
+}
+
 .reviews__strips {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,7 +1006,7 @@ header .header__phonenumber {
 
 .reviews__strip {
   min-width: 32px;
-  max-height: 7px;
+  max-height: 9px;
   background-image: url(../img/rewiews/strip.svg);
   margin: 47px 15px;
 }
@@ -996,12 +1014,12 @@ header .header__phonenumber {
 .reviews__strip_active {
   min-width: 32px;
   margin: 47px 15px;
-  max-height: 7px;
+  max-height: 9px;
   background-image: url(../img/rewiews/active-strip.svg);
 }
 
 .reviews__buttons {
-  margin: 16px auto;
+  margin: 16px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,16 +1036,40 @@ header .header__phonenumber {
 }
 
 .reviews__button-left {
-  background-color: white;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.reviews__button-left:hover {
+  cursor: pointer;
 }
 
 .reviews__button-right {
-  background-color: white;
+  background-color: transparent;
+}
+
+.reviews__button-right:hover {
+  cursor: pointer;
+}
+
+.rewiewsfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 80px 0px;
 }
 
 .carousel__infoblock {
   padding: 72px 72px;
-  max-width: 516px;
+  max-width: 70%;
   margin: 0px 24px;
   border: 2px solid black;
   background-color: white;
@@ -1105,7 +1147,143 @@ header .header__phonenumber {
   color: #1e1b1b;
 }
 
-@media (max-width: 992px) {
+.questions {
+  background: #e2e6e9;
+}
+
+.questions img {
+  cursor: pointer;
+}
+
+.questions__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions__title {
+  margin: 128px 0px 95px 0px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  /* or 67px */
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+}
+
+.questions__blocks {
+  min-width: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.questions__questblock {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 40px;
+  margin-bottom: 12px;
+}
+
+.questblock__visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questblock__title {
+  min-width: 76%;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+}
+
+.questblock__icon {
+  color: white;
+}
+
+.questblock__answer {
+  max-width: 76%;
+  width: 701.26px;
+  height: 96px;
+  left: 553.57px;
+  top: 6302px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+}
+
+.questblock__answer_visible {
+  display: initial;
+  max-width: 76%;
+  width: 701.26px;
+  height: 96px;
+  left: 553.57px;
+  top: 6302px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+}
+
+.open p {
+  margin: 0px;
+  padding: 0px;
+  display: initial;
+}
+
+.close .questblock__answer {
+  display: none;
+}
+
+.close p {
+  display: none;
+}
+
+@media (max-width: 1201px) {
   header .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1189,6 +1367,20 @@ header .header__phonenumber {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .reviews__carousel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carousel__infoblock {
+    padding: 72px 72px;
+    margin: 30px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
