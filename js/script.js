@@ -118,59 +118,13 @@ function toggleItem() {
 
     for (i = 0; i < accItem.length; i++) {
         accItem[i].className = 'questions__questblock questblock close';
+
+        //document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest+.svg" alt="">';
     }
+
     if (itemClass == 'questions__questblock questblock close') {
         this.parentNode.className = 'questions__questblock questblock open';
+
+        //document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest-.svg" alt="">';
     }
-
-    console.log("ha");
-    console.log(accHD);
 }
-
-
-// РЕШЕНИЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// var accItem = document.getElementsByClassName('questblock__answer');
-// var accHD = document.getElementsByClassName('knopa');
-// for (i = 0; i < accHD.length; i++) {
-//     accHD[i].addEventListener('click', toggleItem, false);
-// }
-// function toggleItem() {
-//     var itemClass = this.parentNode.className;
-//     for (i = 0; i < accItem.length; i++) {
-//         accItem[i].className = 'questblock__answer close';
-//     }
-//     if (itemClass == 'questblock__answer close') {
-//         //alert("Вывози!");
-//         this.parentNode.className = 'questblock__answer open';
-//         //this.parentNode.className = 'container'
-//     }
-
-//     console.log("ha");
-//     console.log(accHD);
-// }
-
-
-// var quest = document.querySelector('.questblock__icon');
-// quest.addEventListener('click', function () {
-
-//     if (document.querySelector('.questblock__icon').innerHTML == '<img src="img/Quest-.svg" alt="">') {
-//         document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest+.svg" alt="">';
-
-
-//         document.getElementById("MyElement").classList.add('MyClass');
-
-
-//     } else {
-//         document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest-.svg" alt="">';
-//     }
-// });
-
-// var quest = document.querySelector('.questblock__icon(2)');
-// quest.addEventListener('click', function () {
-
-//     if (document.querySelector('.questblock__icon(2)').innerHTML == '<img src="img/Quest-.svg" alt="">') {
-//         document.querySelector('.questblock__icon(2)').innerHTML = '<img src="img/Quest+.svg" alt="">';
-//     } else {
-//         document.querySelector('.questblock__icon(2)').innerHTML = '<img src="img/Quest-.svg" alt="">';
-//     }
-// });

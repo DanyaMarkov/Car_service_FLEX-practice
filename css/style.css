@@ -1206,6 +1206,7 @@ header .header__phonenumber {
           flex-direction: column;
   padding: 40px 40px;
   margin-bottom: 12px;
+  min-width: 780px;
 }
 
 .questblock__visible {
@@ -1237,7 +1238,8 @@ header .header__phonenumber {
 }
 
 .questblock__icon {
-  color: white;
+  min-width: 52px;
+  min-height: 48px;
 }
 
 .questblock__answer {
@@ -1269,10 +1271,22 @@ header .header__phonenumber {
   color: #939191;
 }
 
+#icon:hover {
+  cursor: pointer;
+}
+
+.open #icon {
+  background-image: url(../img/Quest-.svg);
+}
+
 .open p {
   margin: 0px;
   padding: 0px;
   display: initial;
+}
+
+.close #icon {
+  background-image: url(../img/Quest+.svg);
 }
 
 .close .questblock__answer {

@@ -1033,6 +1033,8 @@ header {
         //justify-content: space-around;
         padding: 40px 40px;
         margin-bottom: 12px;
+
+        min-width: 780px;
     }
 }
 
@@ -1064,7 +1066,12 @@ header {
         // width: auto;
         // padding: 17px 26px;
         // font-size: 28px;
-        color: white;
+        //width: 52px;
+        //height: 48px;
+        min-width: 52px;
+        min-height: 48px;
+
+        //color: white;
     }
 
     &__answer {
@@ -1104,7 +1111,15 @@ header {
     }
 }
 
+#icon:hover {
+    cursor: pointer;
+}
 .open {
+    #icon {
+        //visibility: visible;
+        //opacity: 0.5;
+        background-image: url(../img/Quest-.svg);
+    }
     p {
         margin: 0px;
         padding: 0px;
@@ -1114,6 +1129,11 @@ header {
 }
 
 .close {
+    #icon {
+        //visibility: hidden;
+        //opacity: 0.5;
+        background-image: url(../img/Quest+.svg);
+    }
     .questblock__answer {
         display: none;
     }
