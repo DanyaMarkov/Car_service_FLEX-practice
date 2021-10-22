@@ -866,13 +866,13 @@ header {
 
     &__strip {
         min-width: 32px;
-        max-height: 3px;
+        max-height: 7px;
         background-image: url(../img/rewiews/strip.svg);
         margin: 47px 15px;
         &_active {
             min-width: 32px;
             margin: 47px 15px;
-            max-height: 3px;
+            max-height: 7px;
             background-image: url(../img/rewiews/active-strip.svg);
         }
     }
@@ -887,11 +887,11 @@ header {
     }
 
     &__button-left {
-        background-color: yellow;
+        background-color: white;
     }
 
     &__button-right {
-        background-color: yellow;
+        background-color: white;
     }
 }
 
@@ -955,7 +955,7 @@ header {
     &__message {
         margin: 24px 0px 0px 0px;
         max-width: 472px;
-
+        min-width: 472px;
         font-family: Manrope;
         font-style: normal;
         font-weight: 600;

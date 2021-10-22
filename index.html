@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -459,7 +459,7 @@
         <div class="reviews__body container">
             <div class="reviews__title">Our customers say the nicest things about our service</div>
             <div class="reviews__carousel carousel">
-                <div class="carousel__infoblock infoblock">
+                <div class="carousel__infoblock infoblock" id="first-div">
                     <div class="infoblock__contact">
                         <div class="infoblock__picture">
                             <img src="img/rewiews/man1.png" alt="">
@@ -474,7 +474,8 @@
                         my car in a short comprehensive look on all the working
                     </div>
                 </div>
-                <div class="carousel__infoblock infoblock">
+              
+                <div class="carousel__infoblock infoblock" id="second-div"> 
                     <div class="infoblock__contact">
                         <div class="infoblock__picture">
                             <img src="img/rewiews/man2.png" alt="">
@@ -494,24 +495,26 @@
                 
             </div>
 
-            <div class="reviews__strips">
-                <div class="reviews__strip_active">⠀</div>
-                <div class="reviews__strip">⠀</div>
-                <div class="reviews__strip">⠀</div>
-                <div class="reviews__strip">⠀</div>
+            <div class="reviews__strips" id="strips">
+                <div class="reviews__strip_active" id="strip1">⠀ </div>
+                <div class="reviews__strip" id="strip2">⠀</div>
+                <div class="reviews__strip" id="strip3">⠀</div>
+                <div class="reviews__strip" id="strip4">⠀</div>
             </div>
 
             <div class="reviews__buttons">
                 <div class="reviews__button-left">
-                    <img src="img/rewiews/Left.svg" alt="">
+                    <img src="img/rewiews/Left.svg" id="arrow-left" alt="">
                 </div>
                 <div class="reviews__button-right">
-                    <img src="img/rewiews/Right.png" alt="">
+                    <img src="img/rewiews/Right.png" id="arrow-right" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-
+ 
 </body>
+<script type ="text/javascript" src="js/script.js">
+</script>
 </html>

@@ -988,7 +988,7 @@ header .header__phonenumber {
 
 .reviews__strip {
   min-width: 32px;
-  max-height: 3px;
+  max-height: 7px;
   background-image: url(../img/rewiews/strip.svg);
   margin: 47px 15px;
 }
@@ -996,7 +996,7 @@ header .header__phonenumber {
 .reviews__strip_active {
   min-width: 32px;
   margin: 47px 15px;
-  max-height: 3px;
+  max-height: 7px;
   background-image: url(../img/rewiews/active-strip.svg);
 }
 
@@ -1018,11 +1018,11 @@ header .header__phonenumber {
 }
 
 .reviews__button-left {
-  background-color: yellow;
+  background-color: white;
 }
 
 .reviews__button-right {
-  background-color: yellow;
+  background-color: white;
 }
 
 .carousel__infoblock {
@@ -1094,6 +1094,7 @@ header .header__phonenumber {
 .infoblock__message {
   margin: 24px 0px 0px 0px;
   max-width: 472px;
+  min-width: 472px;
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
