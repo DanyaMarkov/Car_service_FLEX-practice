@@ -1159,6 +1159,104 @@ header {
     }
 }
 
+.ourservices {
+    background-color: #5790c8;
+    &__body {
+        padding: 90px 320px 128px 320px;
+        display: flex;
+        flex-direction: column;
+        //align-items: flex-end;
+        //justify-content: space-between;
+        //background-color: #ff6433;
+        //background: url(../img/backgroungourservices.png) left bottom no-repeat;
+    }
+
+    &__mainblock {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        //justify-content: flex-end;
+        background: url(../img/backgroungourservices.png) left bottom no-repeat;
+
+        //background: #1e1b1b;
+        //height: auto;
+    }
+
+    &__infoblock {
+        //width: 100%;
+        width: 70%;
+        display: flex;
+        //margin-left: 200px;
+        flex-direction: column;
+        background: #1e1b1b;
+        //height: auto;
+    }
+}
+
+.infoblock {
+    &__title {
+        color: #f2f2f2;
+    }
+
+    &__text {
+        color: #f2f2f2;
+    }
+
+    &__button {
+    }
+}
+
+.infoblock {
+    &__title {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 76px;
+
+        letter-spacing: -0.03em;
+
+        /* Black */
+
+        //color: #1e1b1b;
+    }
+
+    &__text {
+        margin: 16px 0px 0px 0px;
+        max-width: 437px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+
+        //color: #1e1b1b;
+
+        opacity: 0.6;
+    }
+
+    &__button a {
+        display: flex;
+        //flex-direction: row;
+        align-items: flex-start;
+
+        margin: 32px 0px 48px 0px;
+        padding: 16px 40px;
+        border: 0px solid #1e1b1b;
+        background: #ff6433;
+        border-radius: 12px;
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 175%;
+
+        color: white;
+        text-decoration: none;
+    }
+}
+
 // Медио запросы ниже ===========================================!!!!!!!!!!!============================!!!!!!!!===============================================
 
 @media (max-width: 1201px) {
