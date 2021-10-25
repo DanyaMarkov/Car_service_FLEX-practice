@@ -11,6 +11,17 @@
   margin: 0px auto;
 }
 
+.activelink {
+  display: block;
+  /*превращаем его в блочный элемент*/
+  content: "";
+  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 2px;
+  /*задаём высоту линии*/
+  background-color: #225384;
+  /*цвет фона элемента*/
+}
+
 header {
   background-color: white;
 }
@@ -72,6 +83,20 @@ header .header__link a {
   font-size: 16px;
   line-height: 28px;
   color: #1e1b1b;
+}
+
+header .header__link a:hover {
+  display: block;
+  /*превращаем его в блочный элемент*/
+  content: "";
+  /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 2px;
+  /*задаём высоту линии*/
+  background-color: #225384;
+  /*цвет фона элемента*/
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
 
 header .header__line {
