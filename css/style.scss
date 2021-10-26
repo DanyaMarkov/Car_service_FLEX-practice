@@ -1160,7 +1160,7 @@ header {
 }
 
 .ourservices {
-    background-color: #5790c8;
+    background-color: #ffffff;
     &__body {
         padding: 90px 320px 128px 320px;
         display: flex;
@@ -1172,37 +1172,30 @@ header {
     }
 
     &__mainblock {
-        width: 100%;
         display: flex;
-        flex-direction: column;
-        //justify-content: flex-end;
-        background: url(../img/backgroungourservices.png) left bottom no-repeat;
 
-        //background: #1e1b1b;
-        //height: auto;
+        justify-content: flex-end;
+
+        background: url(../img/backgroungourservices.png);
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
     }
 
     &__infoblock {
-        //width: 100%;
-        width: 70%;
         display: flex;
-        //margin-left: 200px;
+        box-sizing: border-box;
+        align-items: flex-start;
+
+        padding: 96px 96px 146px 96px;
+
+        justify-content: flex-end;
+
         flex-direction: column;
         background: #1e1b1b;
-        //height: auto;
-    }
-}
 
-.infoblock {
-    &__title {
         color: #f2f2f2;
-    }
-
-    &__text {
-        color: #f2f2f2;
-    }
-
-    &__button {
     }
 }
 
@@ -1215,10 +1208,6 @@ header {
         line-height: 76px;
 
         letter-spacing: -0.03em;
-
-        /* Black */
-
-        //color: #1e1b1b;
     }
 
     &__text {
@@ -1254,6 +1243,124 @@ header {
 
         color: white;
         text-decoration: none;
+    }
+}
+
+.servicesblocks {
+    background: #f5f5f5;
+    &__body {
+        padding: 90px 320px 128px 320px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__serviceinfo {
+        background-color: burlywood;
+        padding: 32px;
+        max-width: 43%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        margin-left: 16px;
+        //padding: 64px 60px 64px 50px;
+    }
+
+    .blocks {
+        background: #f5f5f5;
+    }
+}
+
+.elementblock {
+    background: #ffffff;
+    &__black {
+        display: block;
+    }
+
+    &__white {
+        display: none;
+    }
+}
+
+.elementblock:hover {
+    background: #ff6433;
+    &__black {
+        display: none;
+        margin-left: 1000px;
+    }
+
+    &__white {
+        display: block;
+    }
+}
+
+.activeblock {
+    background: #ff6433;
+
+    .blocks__black {
+        display: none;
+    }
+    // &__black {
+    //     display: none;
+    // }
+
+    // &__white {
+    //     display: none;
+    // }
+}
+
+.serviceinfo {
+    &__picture {
+        margin: 0px auto;
+    }
+
+    &__title {
+        margin: 32px 0px 0px 0px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+
+        letter-spacing: -0.03em;
+
+        color: #1e1b1b;
+    }
+
+    &__text {
+        margin: 16px 0px 0px 0px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        /* or 150% */
+
+        letter-spacing: -0.03em;
+
+        /* Black */
+
+        color: #232536;
+
+        opacity: 0.6;
+    }
+
+    &__link {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 32px auto 0px 0px;
+
+        .link {
+            &__text {
+                margin: 0px 0px 0px 0px;
+            }
+        }
     }
 }
 

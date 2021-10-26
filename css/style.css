@@ -1323,7 +1323,7 @@ header .header__phonenumber {
 }
 
 .ourservices {
-  background-color: #5790c8;
+  background-color: #ffffff;
 }
 
 .ourservices__body {
@@ -1338,34 +1338,36 @@ header .header__phonenumber {
 }
 
 .ourservices__mainblock {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: url(../img/backgroungourservices.png) left bottom no-repeat;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url(../img/backgroungourservices.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .ourservices__infoblock {
-  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 96px 96px 146px 96px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background: #1e1b1b;
-}
-
-.infoblock__title {
-  color: #f2f2f2;
-}
-
-.infoblock__text {
   color: #f2f2f2;
 }
 
@@ -1376,7 +1378,6 @@ header .header__phonenumber {
   font-size: 58px;
   line-height: 76px;
   letter-spacing: -0.03em;
-  /* Black */
 }
 
 .infoblock__text {
@@ -1409,6 +1410,130 @@ header .header__phonenumber {
   line-height: 175%;
   color: white;
   text-decoration: none;
+}
+
+.servicesblocks {
+  background: #f5f5f5;
+}
+
+.servicesblocks__body {
+  padding: 90px 320px 128px 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.servicesblocks__serviceinfo {
+  background-color: burlywood;
+  padding: 32px;
+  max-width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.servicesblocks__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  margin-left: 16px;
+}
+
+.servicesblocks .blocks {
+  background: #f5f5f5;
+}
+
+.elementblock {
+  background: #ffffff;
+}
+
+.elementblock__black {
+  display: block;
+}
+
+.elementblock__white {
+  display: none;
+}
+
+.elementblock:hover {
+  background: #ff6433;
+}
+
+.elementblock:hover__black {
+  display: none;
+  margin-left: 1000px;
+}
+
+.elementblock:hover__white {
+  display: block;
+}
+
+.activeblock {
+  background: #ff6433;
+}
+
+.activeblock .blocks__black {
+  display: none;
+}
+
+.serviceinfo__picture {
+  margin: 0px auto;
+}
+
+.serviceinfo__title {
+  margin: 32px 0px 0px 0px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #1e1b1b;
+}
+
+.serviceinfo__text {
+  margin: 16px 0px 0px 0px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: #232536;
+  opacity: 0.6;
+}
+
+.serviceinfo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 32px auto 0px 0px;
+}
+
+.serviceinfo__link .link__text {
+  margin: 0px 0px 0px 0px;
 }
 
 @media (max-width: 1201px) {
