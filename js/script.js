@@ -128,3 +128,55 @@ function toggleItem() {
         //document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest-.svg" alt="">';
     }
 }
+
+function choose(el) {
+    //alert("А да");
+    //document.getElementById("blocks__element elementblock").className = document.getElementById("blocks__element elementblock").className.replace(/(?:^|\s)MyClass(?!\S)/g, '');
+
+    //el.className = "blocks__element elementblock";
+
+
+
+
+    //let elem = document.querySelector("elementblock")
+
+    //Выведем классы
+    //console.log(elem.classList);
+
+
+
+
+
+    //classList.choose("")
+    //document.getElementById("elementblock").className = "blocks__element elementblock";
+    //Ето работает!
+    el.classList.add("activeblock");
+}
+
+// function choose(el) {
+//     //alert("А да");
+//     $(el).addClass("activeblock");
+// }
+
+// var accIt = document.getElementsByClassName('questblock');
+// var accHDa = document.getElementsByClassName('questblock__visible');
+
+
+// for (i = 0; i < accHDa.length; i++) {
+//     accHDa[i].addEventListener('click', toggleItem, false);
+// }
+// function toggleItem() {
+//     var itemClass = this.parentNode.className;
+
+//     for (i = 0; i < accIt.length; i++) {
+//         accIt[i].className = 'questions__questblock questblock close';
+
+//         //document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest+.svg" alt="">';
+//     }
+
+//     if (itemClass == 'questions__questblock questblock close') {
+//         this.parentNode.className = 'questions__questblock questblock open';
+
+//         //document.querySelector('.questblock__icon').innerHTML = '<img src="img/Quest-.svg" alt="">';
+//     }
+// }

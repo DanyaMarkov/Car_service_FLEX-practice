@@ -1256,7 +1256,7 @@ header {
     }
 
     &__serviceinfo {
-        background-color: burlywood;
+        background-color: rgb(255, 255, 255);
         padding: 32px;
         max-width: 43%;
         display: flex;
@@ -1288,24 +1288,47 @@ header {
     }
 }
 
-.elementblock:hover {
-    background: #ff6433;
-    &__black {
-        display: none;
-        margin-left: 1000px;
-    }
-
-    &__white {
-        display: block;
-    }
+// Каша мала
+.elementblock {
+    background: #ffffff;
 }
+
+.elementblock__black {
+    display: block;
+}
+
+.elementblock__white {
+    display: none;
+}
+
+.elementblock:hover .elementblock__black {
+    background: #ff6433;
+}
+
+.elementblock:hover .elementblock__black {
+    display: none;
+}
+
+.elementblock:hover .elementblock__white {
+    display: block;
+}
+
+// Да
 
 .activeblock {
     background: #ff6433;
 
-    .blocks__black {
+    .elementblock__black {
         display: none;
     }
+
+    .elementblock__white {
+        display: block;
+    }
+
+    // .blocks__black {
+    //     display: none;
+    // }
     // &__black {
     //     display: none;
     // }

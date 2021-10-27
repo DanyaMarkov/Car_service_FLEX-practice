@@ -1431,7 +1431,7 @@ header .header__phonenumber {
 }
 
 .servicesblocks__serviceinfo {
-  background-color: burlywood;
+  background-color: white;
   padding: 32px;
   max-width: 43%;
   display: -webkit-box;
@@ -1473,16 +1473,27 @@ header .header__phonenumber {
   display: none;
 }
 
-.elementblock:hover {
+.elementblock {
+  background: #ffffff;
+}
+
+.elementblock__black {
+  display: block;
+}
+
+.elementblock__white {
+  display: none;
+}
+
+.elementblock:hover .elementblock__black {
   background: #ff6433;
 }
 
-.elementblock:hover__black {
+.elementblock:hover .elementblock__black {
   display: none;
-  margin-left: 1000px;
 }
 
-.elementblock:hover__white {
+.elementblock:hover .elementblock__white {
   display: block;
 }
 
@@ -1490,8 +1501,12 @@ header .header__phonenumber {
   background: #ff6433;
 }
 
-.activeblock .blocks__black {
+.activeblock .elementblock__black {
   display: none;
+}
+
+.activeblock .elementblock__white {
+  display: block;
 }
 
 .serviceinfo__picture {
