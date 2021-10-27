@@ -667,10 +667,10 @@ header {
     &__body {
         display: flexbox;
 
-        flex-direction: column;
+        //flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0px auto;
+        //margin: 0px auto;
         //margin: 128px auto;
     }
 
@@ -687,6 +687,7 @@ header {
 
     &__rowinfo {
         margin: 48px 0px 0px 0px;
+        //padding: 30px 60px 30px 50px;
         background: #f2f2f2;
     }
 }
@@ -696,20 +697,25 @@ header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    //padding: auto 80px auto 80px;
 
     //background-image: url(../img/background1.png);
 
     background: url(../img/background1.png) left bottom no-repeat, url(../img/background2.png) right top no-repeat;
 
-    &__body {
+    &__bodybanner {
+        padding: auto 80px auto 80px;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         background-color: #ff6433;
+
         margin-left: 20%;
         //margin: 0px 0px 0px 318px;
-        max-width: 569px;
-        min-width: 250px;
+        max-width: 35%;
+        min-width: 30%;
+        justify-content: center;
+        //height: 100%;
         //background: cornflowerblue;
 
         // margin-left: auto;
@@ -724,7 +730,7 @@ header {
         font-size: 48px;
         line-height: 140%;
         letter-spacing: -0.03em;
-
+        margin: auto auto auto auto;
         color: #ffffff;
     }
 
@@ -732,7 +738,7 @@ header {
         display: flex;
         //flex-direction: row;
         align-items: flex-start;
-
+        text-decoration: none;
         margin: 32px 0px 48px 0px;
         padding: 16px 40px;
         border: 0px solid #1e1b1b;
@@ -1249,13 +1255,15 @@ header {
 .servicesblocks {
     background: #f5f5f5;
     &__body {
-        padding: 90px 320px 128px 320px;
+        //padding: 128px auto 128px auto;
+        // padding: 90px 320px 128px 320px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     &__serviceinfo {
+        margin: 128px auto 128px auto;
         background-color: rgb(255, 255, 255);
         padding: 32px;
         max-width: 43%;
@@ -1264,11 +1272,17 @@ header {
     }
 
     &__blocks {
+        margin: 128px auto 128px auto;
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         height: 100%;
         margin-left: 16px;
+        justify-content: center;
+
+        position: relative;
+
         //padding: 64px 60px 64px 50px;
     }
 
@@ -1278,7 +1292,11 @@ header {
 }
 
 .elementblock {
+    min-width: 172px;
     background: #ffffff;
+
+    margin: 16px 16px;
+
     &__black {
         display: block;
     }
@@ -1325,22 +1343,26 @@ header {
     .elementblock__white {
         display: block;
     }
-
-    // .blocks__black {
-    //     display: none;
-    // }
-    // &__black {
-    //     display: none;
-    // }
-
-    // &__white {
-    //     display: none;
-    // }
 }
 
 .serviceinfo {
     &__picture {
         margin: 0px auto;
+        // opacity: 1;
+        // background-image: url(../img/servicepic.png);
+
+        // height: auto;
+        // vertical-align: top;
+        // width: 48%;
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+
+            display: inline-block;
+        }
+        //display: inline-block;
     }
 
     &__title {
@@ -1366,8 +1388,6 @@ header {
         /* or 150% */
 
         letter-spacing: -0.03em;
-
-        /* Black */
 
         color: #232536;
 

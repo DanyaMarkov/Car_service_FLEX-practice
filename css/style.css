@@ -753,17 +753,12 @@ header .header__phonenumber {
 
 .contactus__body {
   display: flexbox;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px auto;
 }
 
 .contactus__banner {
@@ -790,7 +785,8 @@ header .header__phonenumber {
   background: url(../img/background1.png) left bottom no-repeat, url(../img/background2.png) right top no-repeat;
 }
 
-.banner__body {
+.banner__bodybanner {
+  padding: auto 80px auto 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,8 +799,11 @@ header .header__phonenumber {
           flex-direction: column;
   background-color: #ff6433;
   margin-left: 20%;
-  max-width: 569px;
-  min-width: 250px;
+  max-width: 35%;
+  min-width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner__title {
@@ -814,6 +813,7 @@ header .header__phonenumber {
   font-size: 48px;
   line-height: 140%;
   letter-spacing: -0.03em;
+  margin: auto auto auto auto;
   color: #ffffff;
 }
 
@@ -824,6 +824,7 @@ header .header__phonenumber {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-decoration: none;
   margin: 32px 0px 48px 0px;
   padding: 16px 40px;
   border: 0px solid #1e1b1b;
@@ -1417,7 +1418,6 @@ header .header__phonenumber {
 }
 
 .servicesblocks__body {
-  padding: 90px 320px 128px 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1431,6 +1431,7 @@ header .header__phonenumber {
 }
 
 .servicesblocks__serviceinfo {
+  margin: 128px auto 128px auto;
   background-color: white;
   padding: 32px;
   max-width: 43%;
@@ -1444,6 +1445,7 @@ header .header__phonenumber {
 }
 
 .servicesblocks__blocks {
+  margin: 128px auto 128px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1455,6 +1457,10 @@ header .header__phonenumber {
       flex-wrap: wrap;
   height: 100%;
   margin-left: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .servicesblocks .blocks {
@@ -1462,7 +1468,9 @@ header .header__phonenumber {
 }
 
 .elementblock {
+  min-width: 172px;
   background: #ffffff;
+  margin: 16px 16px;
 }
 
 .elementblock__black {
@@ -1513,6 +1521,13 @@ header .header__phonenumber {
   margin: 0px auto;
 }
 
+.serviceinfo__picture img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  display: inline-block;
+}
+
 .serviceinfo__title {
   margin: 32px 0px 0px 0px;
   font-family: Manrope;
@@ -1533,7 +1548,6 @@ header .header__phonenumber {
   line-height: 36px;
   /* or 150% */
   letter-spacing: -0.03em;
-  /* Black */
   color: #232536;
   opacity: 0.6;
 }
